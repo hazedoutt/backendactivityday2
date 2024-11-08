@@ -1,0 +1,22 @@
+Assignment 7 answers
+
+
+1.  db.products.find({$and: [{price: {$gte: 20, $lte: 100}}, {stock: {$gt: 0}}]})
+
+2.  db.students.find({$and: [{grade: {$gt: 85}}, {$or: [{attendance: {$gt: 90}}, {age: {$lt: 18}}]}]})
+
+3.  db.jobs.find({$and: [{salary: {$gt: 50000}}, {$or: [{location: "San Francisco"}, {location: "New York"}]}]})
+
+4.  db.inventory.find({$and: [{category: "electronics"}, {discount: {$gte: 10}}, {stock: {$gt: 0}}]})
+
+5.  db.orders.find({$and: [{status: "pending"}, {$or: [{customer_type: "VIP"}, {amount: {$gt: 500}}]}]})
+
+6.  db.students.find({$or: [{$and: [{age: {$gt: 18}}, {grade: {$lt: 60}}]}, {attendance: {$lt: 75}}]})
+
+7.  db.products.find({$or: [{price: {$lt: 200}}, {stock: {$lt: 5}}]})
+
+8.  db.items.find({$and: [{price: {$lt: 100}}, {$or: [{type: "software"}, {type: "service"}]}]})
+
+9.  db.employees.find({$and: [{experience: {$gt: 5}}, {$or: [{department: "Engineering"}, {department: "HR"}]}]})
+
+10. db.orders.find({$and: [{status: "urgent"}, {$or: [{total_amount: {$gt: 1000}}, {priority: "high"}]}]})
